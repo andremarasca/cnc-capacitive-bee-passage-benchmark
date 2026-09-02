@@ -1,0 +1,5 @@
+collection_id,session_count,raw_chunk_count,expected_event_count,collection_dates,biological_configuration,specimen_continuity,notes
+c1,16,516,10203,2026-06-12|2026-06-13|2026-06-15|2026-06-16,one specimen per passage,multiple adult specimens with unrecorded change times,largest collection acquired across four dates
+c2,10,313,6184,2026-06-17|2026-06-18,one specimen per passage,same adult specimen across all sessions,complete collection acquired across two dates
+c3,10,313,6184,2026-06-18,two specimens per passage,same two adult specimens across all sessions,specimens were aligned and touching
+

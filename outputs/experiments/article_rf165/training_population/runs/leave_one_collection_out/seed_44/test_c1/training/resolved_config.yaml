@@ -1,0 +1,58 @@
+schema_version: 1
+paths:
+  recordings_dir: data/raw
+  datasets_dir: outputs/processed
+  models_dir: outputs/models
+  reports_dir: outputs/reports
+geometry:
+  zone_low_mm: 36.0
+  zone_high_mm: 76.0
+preprocessing:
+  source_sample_rate_hz: 100000
+  output_sample_rate_hz: 30
+  initialization: steady_state_first_sample
+  state_scope: session
+  bessel:
+    mode: bandpass
+    order: 4
+    low_cutoff_hz: 0.1
+    high_cutoff_hz: 5.5
+    norm: phase
+labels:
+  out_id: 0
+  left_id: 1
+  right_id: 2
+  ignore_id: -100
+model:
+  input_channels: 1
+  num_classes: 3
+  feature_maps: 32
+  prediction_generation_layers: 5
+  refinement_layers: 4
+  refinement_stages: 2
+  dropout: 0.5
+  causal: false
+  expected_trainable_parameters: 75337
+  receptive_field_frames: 165
+  future_context_frames: 82
+training:
+  epochs: 100
+  batch_size: 1
+  learning_rate: 0.0005
+  adam_betas:
+  - 0.9
+  - 0.999
+  adam_epsilon: 1.0e-08
+  weight_decay: 0.0
+  smoothing_weight: 0.15
+  smoothing_tau: 4.0
+  seed: 44
+  patience: 10
+evaluation:
+  segment_iou_thresholds:
+  - 0.1
+  - 0.25
+  - 0.5
+streaming:
+  block_size_frames: 30
+  persist_state: true

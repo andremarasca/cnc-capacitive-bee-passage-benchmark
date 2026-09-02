@@ -1,0 +1,147 @@
+schema_version: 1
+
+paths:
+  raw_data: "data/raw"
+  gcode: "data/gcode"
+  metadata: "data/metadata"
+  outputs: "outputs"
+  reference_results: "results/reference"
+
+dataset:
+  expected_sessions: 36
+  expected_chunks: 1142
+  expected_valid_events: 22571
+  collections: ["c1", "c2", "c3"]
+  retain_all_valid_events: true
+
+geometry:
+  travel_min_mm: 0.0
+  travel_max_mm: 112.0
+  roi_low_mm: 36.0
+  roi_high_mm: 76.0
+
+preprocessing:
+  source_sample_rate_hz: 100000
+  output_sample_rate_hz: 30
+  resampling: "streaming_temporal_bin_mean"
+  filter:
+    family: "bessel"
+    mode: "bandpass"
+    prototype_order: 4
+    transformed_order: 8
+    low_critical_hz: 0.10
+    high_critical_hz: 5.5
+    norm: "phase"
+    representation: "sos"
+    causal: true
+    initialization: "steady_state_first_sample"
+    state_scope: "physical_session"
+
+labels:
+  classes:
+    OUT: 0
+    LEFT: 1
+    RIGHT: 2
+  require_complete_roi_crossing: true
+
+speed_analysis:
+  scope: "main_session_grouped_oof_only"
+  bins_mm_min:
+    low: [null, 1500.0]
+    medium: [1500.0, 2500.0]
+    high: [2500.0, null]
+
+splits:
+  balance_components:
+    events: 1.0
+    frames: 1.0
+    collections: 1.0
+    motion_families: 1.0
+    speed_bins: 1.0
+  main_session_grouped:
+    folds: 5
+    partition_session_counts: [8, 7, 7, 7, 7]
+    assignment: "greedy_descending_events_then_deterministic_pair_swaps"
+    rotation:
+      test_offset: 0
+      validation_offset: 1
+  collection_transfer:
+    validation_session_count: "ceil(0.20 * development_sessions)"
+    validation_assignment: "deterministic_balanced"
+  gcode_blocked:
+    folds: 5
+    exact_gcode_ids: 10
+    gcode_ids_per_group: 2
+    assignment: "exhaustive_pairings_minimum_balance_score"
+    tie_break: "lexicographic_group_ids"
+    rotation:
+      test_offset: 0
+      validation_offset: 1
+
+training:
+  main_seeds: [42, 43, 44]
+  default_seed: 42
+  safe_core_frames: 900
+  halo_frames: 142
+  input_mask_includes_halo: true
+  loss_mask_excludes_halo: true
+
+baseline:
+  thresholds: [0.01, 0.025, 0.05, 0.075, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.75, 1.00, 1.25, 1.50, 1.75, 2.00, 2.50, 3.00]
+  merge_gap_frames: [0, 1, 2, 3]
+  minimum_duration_frames: [1, 2, 3]
+  polarity_source: "training_only"
+  selection_metric: "validation_event_f1_at_iou_0.25"
+  tie_breaks:
+    - "validation_absolute_count_error"
+    - "validation_false_positive_count"
+    - "fixed_parameter_order"
+
+evaluation:
+  event_iou_thresholds: [0.10, 0.25, 0.50]
+  primary_event_iou: 0.25
+  matching: "maximum_cardinality_then_maximum_total_iou"
+  matching_scope: ["session", "direction"]
+  temporal_errors: ["start", "end", "center"]
+  temporal_summaries: ["median", "p95"]
+  inference:
+    core_frames: 900
+    halo_frames: 142
+    stitch: "discard_internal_halo_then_concatenate_logits"
+    event_extraction: "after_session_logit_stitching"
+
+execution:
+  refuse_nonempty_output: true
+  allow_validated_resume: true
+  deterministic_algorithms: true
+
+gcode_generation:
+  machine:
+    maximum_velocity_mm_min: 3500.0
+    maximum_acceleration_mm_s2: 550.0
+  path:
+    step_mm: 1.0
+    minimum_segment_time_s: 0.100
+    integration_step_s: 0.01
+  motion:
+    minimum_velocity_mm_min: 500.0
+    maximum_velocity_mm_min: 3500.0
+    leg_pause_s: 1.0
+    velocity_step_mm_min: 100.0
+    sweep_decrement_mm_min: 3.0
+    random_program_hours: 4.0
+    seed: 42
+  output:
+    maximum_file_hours: 3.0
+    maximum_file_lines: 30000
+  duration_estimation:
+    monte_carlo_legs: 2000
+    cnc_overhead_factor: 1.05
+  random_process:
+    initial_velocity_exponent: 0.30
+    reversion_rate_range: [5.11, 8.50]
+    noise_scale_range: [300.0, 467.04]
+    boundary_gain: 557.9303
+    boundary_margin_fraction: 0.1545
+    maximum_acceleration_mm_s2: 120.0
+    acceleration_low_pass_hz: 0.5

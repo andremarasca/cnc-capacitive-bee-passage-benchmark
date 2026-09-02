@@ -1,0 +1,12 @@
+{
+  "adaptation_clip_z": 3.0,
+  "location_time_constant_seconds": 60.0,
+  "maximum_scale_ratio": 8.0,
+  "method": "causal_adaptive",
+  "minimum_scale_ratio": 0.25,
+  "sample_rate_hz": 30.0,
+  "scale_time_constant_seconds": 60.0,
+  "schema_version": 1,
+  "state_scope": "session",
+  "variant": "causal_adaptive_tau60"
+}

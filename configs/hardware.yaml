@@ -1,0 +1,51 @@
+schema_version: 1
+
+sensor_front_end:
+  tunnel_material: "CPVC"
+  tunnel_internal_diameter_mm: 11.5
+  tunnel_external_diameter_mm: 15.0
+  copper_electrode_wire_diameter_mm: 2.0
+  electrode_centers_mm: [49.0, 56.0, 63.0]
+  excitation_sine_source: "ESP32 DAC"
+  excitation_sine_range_v: [0.0, 3.3]
+  excitation_frequency_hz: 33000
+  excitation_square_source: "ESP32 digital output"
+  instrumentation_amplifier: "AD620"
+  gain_adjustment: "maximum manual gain without visible saturation"
+  synchronous_demodulator: "AD630"
+  reference_phase: "quadrature ESP32 square-wave reference"
+  analog_low_pass:
+    location: "between AD630 output and NI 9215 input"
+    topology: "passive first-order RC"
+    resistor_ohm: 10000
+    resistor_tolerance_percent: 1.0
+    capacitor_f: 0.0000001
+    capacitor_marking: "104J100"
+    capacitor_material: "polypropylene film"
+    capacitor_tolerance_percent: 5.0
+    nominal_cutoff_hz: 159.155
+
+acquisition:
+  chassis: "NI cDAQ-9185"
+  module_model: "NI 9215"
+  device_name: "cDAQ9185-1D0D747"
+  module_slot: "Mod4"
+  channel: "Mod4/ai3"
+  channels: ["Mod3/ai1", "Mod3/ai2", "Mod4/ai3"]
+  terminal_configuration: "differential"
+  sample_rate_hz: 100000
+  input_range_v: [-10.0, 10.0]
+  nominal_resolution_bits: 16
+
+cnc:
+  controller: "GRBL"
+  lead_screw: "Tr8 trapezoidal lead screw"
+  nut: "anti-backlash nut"
+  lead_mm_per_revolution: 8.0
+  steps_per_mm: 100.0
+  travel_mm: [0.0, 112.0]
+  step_detection_threshold_v: 2.5
+  minimum_edge_gap_samples: 10
+  minimum_pulse_samples: 2
+  direction_vote_samples: 3
+  trips_per_chunk: 10

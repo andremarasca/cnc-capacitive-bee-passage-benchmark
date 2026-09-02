@@ -1,0 +1,77 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Prepare reproducibility artifacts",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "bee_counter_bench.cli",
+      "args": ["prepare"],
+      "cwd": "${workspaceFolder}",
+      "env": {"PYTHONPATH": "${workspaceFolder}/src"},
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "CPU smoke test",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "bee_counter_bench.cli",
+      "args": [
+        "smoke-test",
+        "--device",
+        "cpu",
+        "--model-config",
+        "configs/model_rf165.yaml"
+      ],
+      "cwd": "${workspaceFolder}",
+      "env": {"PYTHONPATH": "${workspaceFolder}/src"},
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Test acquisition position",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["tests/test_acquisition_position.py", "-q"],
+      "cwd": "${workspaceFolder}",
+      "env": {"PYTHONPATH": "${workspaceFolder}/src"},
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Generate temporal examples",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "bee_counter_bench.cli",
+      "args": ["make-temporal-examples"],
+      "cwd": "${workspaceFolder}",
+      "env": {"PYTHONPATH": "${workspaceFolder}/src"},
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "RF165 article GPU suite",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "bee_counter_bench.cli",
+      "args": [
+        "run-article-suite",
+        "--plan",
+        "configs/article_rf165.yaml",
+        "--parallel",
+        "2",
+        "--device",
+        "cuda"
+      ],
+      "cwd": "${workspaceFolder}",
+      "env": {"PYTHONPATH": "${workspaceFolder}/src"},
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Audit curated release",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/release_audit.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

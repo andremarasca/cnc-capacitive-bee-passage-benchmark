@@ -1,0 +1,44 @@
+schema_version: 1
+
+architecture:
+  name: "MS-TCN++-RF165"
+  upstream_revision: "sj-li/MS-TCN2@f423a9e65f4ccb1cd7322eb9f94946a19e787993"
+  causal: false
+  input_channels: 1
+  classes: ["OUT", "LEFT", "RIGHT"]
+  feature_maps: 32
+  prediction_generation_layers: 5
+  prediction_generation_dilations:
+    forward: [1, 2, 4, 8, 16]
+    complementary: [16, 8, 4, 2, 1]
+  refinement_stages: 2
+  refinement_layers_per_stage: 4
+  refinement_dilations: [1, 2, 4, 8]
+  kernel_size: 3
+  padding: "symmetric_same"
+  dropout: 0.5
+  initialization: "pytorch_default"
+  expected_trainable_parameters: 75337
+  receptive_field_frames: 165
+  context_frames_each_side: 82
+
+loss:
+  cross_entropy: "per_frame_each_stage"
+  temporal_smoothing: "truncated_mse_adjacent_log_probabilities"
+  smoothing_weight: 0.15
+  smoothing_tau: 4.0
+
+optimizer:
+  name: "Adam"
+  learning_rate: 0.0005
+  betas: [0.9, 0.999]
+  epsilon: 0.00000001
+  weight_decay: 0.0
+
+training:
+  batch_size: 1
+  maximum_epochs: 100
+  early_stopping_patience: 10
+  checkpoint_metric: "validation_loss"
+  checkpoint_mode: "minimum"
+  num_workers: 0

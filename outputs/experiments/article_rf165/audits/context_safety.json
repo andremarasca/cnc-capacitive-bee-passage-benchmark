@@ -1,0 +1,119 @@
+{
+  "claim_boundary": "No labeled neighboring-event interval is contained in the nominal neural receptive field of a frame from the focal event. This does not claim complete statistical independence because the causal Bessel IIR and, when selected, the causal adaptive normalizer retain decaying past state.",
+  "dataset_manifest_sha256": "05bf8cdfac9a361231eed7f225c8a9cf53959be42102291975ea32119bbc256f",
+  "direction_sequence": {
+    "alternating_transitions": 22535,
+    "same_direction_transitions": 0,
+    "transitions": {
+      "1->2": 11250,
+      "2->1": 11285
+    }
+  },
+  "event_isolation": {
+    "adjacent_pairs": 22535,
+    "event_duration_frames_quantiles": {
+      "maximum": 377.0,
+      "median": 34.0,
+      "minimum": 20.0,
+      "p90": 59.0,
+      "p95": 68.0,
+      "p99": 103.0
+    },
+    "event_frame_neighbor_violations": 0,
+    "events": 22571,
+    "events_longer_than_receptive_field": 3,
+    "gap_frames_quantiles": {
+      "maximum": 560.0,
+      "median": 106.0,
+      "minimum": 85.0,
+      "p90": 136.0,
+      "p95": 151.0,
+      "p99": 225.0
+    },
+    "minimum_margin_frames": 3,
+    "minimum_margin_seconds": 0.1,
+    "minimum_out_gap_frames": 85,
+    "minimum_out_gap_seconds": 2.8333333333333335,
+    "sessions": 36,
+    "sessions_with_first_event_padding": 34,
+    "sessions_with_last_event_padding": 28,
+    "strict_neural_event_isolation": true,
+    "violations": []
+  },
+  "experiment_id": "article_rf165",
+  "model_configuration": {
+    "path": "configs/model_rf165.yaml",
+    "sha256": "ec0f4d3bbd73d44e90e800affd831f6981968440813f4c0b249fc881eb5feb03",
+    "trainable_parameters": 75337
+  },
+  "normalization_memory": [
+    {
+      "interpretation": "Fixed training-population statistics add no temporal state during inference.",
+      "runtime": {
+        "method": "training_population",
+        "schema_version": 1,
+        "variant": "training_population"
+      },
+      "state_scope": "training_sessions_only_fixed_statistics",
+      "strict_finite_memory": true
+    },
+    {
+      "interpretation": "The causal adaptive normalizer retains decaying past-session state and does not establish complete event independence.",
+      "runtime": {
+        "adaptation_clip_z": 3.0,
+        "location_time_constant_seconds": 60.0,
+        "maximum_scale_ratio": 8.0,
+        "method": "causal_adaptive",
+        "minimum_scale_ratio": 0.25,
+        "sample_rate_hz": 30.0,
+        "scale_time_constant_seconds": 60.0,
+        "schema_version": 1,
+        "state_scope": "session",
+        "variant": "causal_adaptive_tau60"
+      },
+      "state_scope": "session",
+      "strict_finite_memory": false
+    }
+  ],
+  "preprocessing_memory": {
+    "filter_family": "bandpass",
+    "interpretation": "The neural field excludes labeled neighboring-event frames. The causal IIR preprocessing retains decaying past state, so the audit does not claim complete statistical independence.",
+    "median_event_peak_to_peak": 0.01503542612772435,
+    "probes": {
+      "maximum": {
+        "duration_frames": 377,
+        "duration_seconds": 12.566666666666666,
+        "heuristic_tail_to_robust_out_noise_ratio": 3.3102818362567525,
+        "maximum_later_tail_to_probe_peak_ratio": 0.326260518532483,
+        "point_tail_to_probe_peak_ratio": 0.17972450339270737
+      },
+      "median": {
+        "duration_frames": 34,
+        "duration_seconds": 1.1333333333333333,
+        "heuristic_tail_to_robust_out_noise_ratio": 0.14965710896432363,
+        "maximum_later_tail_to_probe_peak_ratio": 0.014750165813067463,
+        "point_tail_to_probe_peak_ratio": 0.00812450470619288
+      },
+      "p95": {
+        "duration_frames": 68,
+        "duration_seconds": 2.2666666666666666,
+        "heuristic_tail_to_robust_out_noise_ratio": 0.633167973239709,
+        "maximum_later_tail_to_probe_peak_ratio": 0.06240487109126202,
+        "point_tail_to_probe_peak_ratio": 0.057189539749381305
+      }
+    },
+    "robust_out_standard_deviation": 0.0014818876964069203,
+    "state_scope": "session",
+    "strict_finite_memory": false
+  },
+  "receptive_field": {
+    "future_frames": 82,
+    "future_seconds": 2.7333333333333334,
+    "past_frames": 82,
+    "past_seconds": 2.7333333333333334,
+    "total_frames": 165,
+    "total_seconds": 5.5
+  },
+  "schema_version": 1,
+  "source_code_sha256": "9a7c7e8efa5ca4475622fc9386cd7522e582de419b436e3e478b3be6c7a5558e"
+}

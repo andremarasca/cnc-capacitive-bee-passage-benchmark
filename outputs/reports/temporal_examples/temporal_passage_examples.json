@@ -1,0 +1,35 @@
+{
+  "context_s": 1.2,
+  "dataset_manifest_sha256": "05bf8cdfac9a361231eed7f225c8a9cf53959be42102291975ea32119bbc256f",
+  "examples": [
+    {
+      "collection_id": "c1",
+      "direction": "LEFT",
+      "event_end_frame": 10878,
+      "event_index": 45,
+      "event_start_frame": 10802,
+      "mean_speed_mm_min": 928.8289877084585,
+      "panel": "A",
+      "raw_sha256": "d5b8b677e332e19645da2eac7927dfa33476c79bff37890c1dc5ff9e5c88e20c",
+      "relative_raw_path": "data/raw/c1/bee_constant_velocity_sweep_part002_1067_500__20260615_103327/bee_constant_velocity_sweep_part002_1067_500__20260615_103327_chunk003.npz",
+      "session_id": "bee_constant_velocity_sweep_part002_1067_500__20260615_103327"
+    },
+    {
+      "collection_id": "c1",
+      "direction": "RIGHT",
+      "event_end_frame": 10626,
+      "event_index": 44,
+      "event_start_frame": 10550,
+      "mean_speed_mm_min": 931.7132509671725,
+      "panel": "B",
+      "raw_sha256": "d5b8b677e332e19645da2eac7927dfa33476c79bff37890c1dc5ff9e5c88e20c",
+      "relative_raw_path": "data/raw/c1/bee_constant_velocity_sweep_part002_1067_500__20260615_103327/bee_constant_velocity_sweep_part002_1067_500__20260615_103327_chunk003.npz",
+      "session_id": "bee_constant_velocity_sweep_part002_1067_500__20260615_103327"
+    }
+  ],
+  "raw_display_downsampling": "bin_mean_for_vector_rendering_only",
+  "raw_manifest_sha256": "328e71b96313139ac08514eb6b84caa79916c1c868295abc34c242fe1a0c0db2",
+  "schema_version": 1,
+  "selection_path": "data/metadata/temporal_examples.csv",
+  "selection_sha256": "a6a9e23923d36615e44b21e4c3b78133c7cb876bc972fc28a96720d758653245"
+}

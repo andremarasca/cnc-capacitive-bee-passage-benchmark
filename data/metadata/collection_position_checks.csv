@@ -1,0 +1,4 @@
+collection_id,check_timing,reference,expected_position,observed_result,resolution,notes
+c1,end of acquisition campaign,physical mark,return to initial or expected position,no visible difference,visual only,no quantitative displacement measurement
+c2,end of acquisition campaign,physical mark,return to initial or expected position,no visible difference,visual only,no quantitative displacement measurement
+c3,end of acquisition campaign,physical mark,return to initial or expected position,no visible difference,visual only,no quantitative displacement measurement

@@ -1,0 +1,1412 @@
+{
+  "dataset": {
+    "events": {
+      "LEFT": 11285,
+      "RIGHT": 11286
+    },
+    "input_samples": 11292368135,
+    "labels": {
+      "LEFT": 435844,
+      "OUT": 2514391,
+      "RIGHT": 437460
+    },
+    "masked_frames": 0,
+    "output_frames": 3387695,
+    "sessions": 36,
+    "source_chunks": 1142
+  },
+  "dataset_manifest_sha256": "05bf8cdfac9a361231eed7f225c8a9cf53959be42102291975ea32119bbc256f",
+  "gcode": {
+    "files": 10,
+    "manifest_sha256": "497fcb99952e22ab019ceea4b1aef3517f02f874326f62a11a82fe547520c169",
+    "session_prefix_mapping": "passed"
+  },
+  "protocols": {
+    "gcode_blocked": {
+      "folds": [
+        {
+          "excluded": {
+            "events": 0,
+            "events_by_collection": {},
+            "events_by_motion_family": {},
+            "events_by_speed_bin": {},
+            "frames": 0,
+            "sessions": 0
+          },
+          "fold_id": "gcode_fold_1",
+          "test": {
+            "events": 5633,
+            "events_by_collection": {
+              "c1": 2417,
+              "c2": 1608,
+              "c3": 1608
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 3239,
+              "random_acceleration": 2394
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2285,
+              "2500_and_above": 2244,
+              "below_1500": 1104
+            },
+            "frames": 809505,
+            "sessions": 7
+          },
+          "train": {
+            "events": 13128,
+            "events_by_collection": {
+              "c1": 5976,
+              "c2": 3576,
+              "c3": 3576
+            },
+            "events_by_motion_family": {
+              "random_acceleration": 10472,
+              "velocity_combinations": 2656
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 5987,
+              "2500_and_above": 4557,
+              "below_1500": 2584
+            },
+            "frames": 1934517,
+            "sessions": 22
+          },
+          "validation": {
+            "events": 3810,
+            "events_by_collection": {
+              "c1": 1810,
+              "c2": 1000,
+              "c3": 1000
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 570,
+              "random_acceleration": 3240
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 1402,
+              "2500_and_above": 1275,
+              "below_1500": 1133
+            },
+            "frames": 643673,
+            "sessions": 7
+          }
+        },
+        {
+          "excluded": {
+            "events": 0,
+            "events_by_collection": {},
+            "events_by_motion_family": {},
+            "events_by_speed_bin": {},
+            "frames": 0,
+            "sessions": 0
+          },
+          "fold_id": "gcode_fold_2",
+          "test": {
+            "events": 3810,
+            "events_by_collection": {
+              "c1": 1810,
+              "c2": 1000,
+              "c3": 1000
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 570,
+              "random_acceleration": 3240
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 1402,
+              "2500_and_above": 1275,
+              "below_1500": 1133
+            },
+            "frames": 643673,
+            "sessions": 7
+          },
+          "train": {
+            "events": 14097,
+            "events_by_collection": {
+              "c1": 6061,
+              "c2": 4018,
+              "c3": 4018
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 3239,
+              "random_acceleration": 9682,
+              "velocity_combinations": 1176
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 6108,
+              "2500_and_above": 4983,
+              "below_1500": 3006
+            },
+            "frames": 2079665,
+            "sessions": 21
+          },
+          "validation": {
+            "events": 4664,
+            "events_by_collection": {
+              "c1": 2332,
+              "c2": 1166,
+              "c3": 1166
+            },
+            "events_by_motion_family": {
+              "random_acceleration": 3184,
+              "velocity_combinations": 1480
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2164,
+              "2500_and_above": 1818,
+              "below_1500": 682
+            },
+            "frames": 664357,
+            "sessions": 8
+          }
+        },
+        {
+          "excluded": {
+            "events": 0,
+            "events_by_collection": {},
+            "events_by_motion_family": {},
+            "events_by_speed_bin": {},
+            "frames": 0,
+            "sessions": 0
+          },
+          "fold_id": "gcode_fold_3",
+          "test": {
+            "events": 4664,
+            "events_by_collection": {
+              "c1": 2332,
+              "c2": 1166,
+              "c3": 1166
+            },
+            "events_by_motion_family": {
+              "random_acceleration": 3184,
+              "velocity_combinations": 1480
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2164,
+              "2500_and_above": 1818,
+              "below_1500": 682
+            },
+            "frames": 664357,
+            "sessions": 8
+          },
+          "train": {
+            "events": 13859,
+            "events_by_collection": {
+              "c1": 5847,
+              "c2": 4006,
+              "c3": 4006
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 3809,
+              "random_acceleration": 8874,
+              "velocity_combinations": 1176
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 5709,
+              "2500_and_above": 4834,
+              "below_1500": 3316
+            },
+            "frames": 2129770,
+            "sessions": 20
+          },
+          "validation": {
+            "events": 4048,
+            "events_by_collection": {
+              "c1": 2024,
+              "c2": 1012,
+              "c3": 1012
+            },
+            "events_by_motion_family": {
+              "random_acceleration": 4048
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 1801,
+              "2500_and_above": 1424,
+              "below_1500": 823
+            },
+            "frames": 593568,
+            "sessions": 8
+          }
+        },
+        {
+          "excluded": {
+            "events": 0,
+            "events_by_collection": {},
+            "events_by_motion_family": {},
+            "events_by_speed_bin": {},
+            "frames": 0,
+            "sessions": 0
+          },
+          "fold_id": "gcode_fold_4",
+          "test": {
+            "events": 4048,
+            "events_by_collection": {
+              "c1": 2024,
+              "c2": 1012,
+              "c3": 1012
+            },
+            "events_by_motion_family": {
+              "random_acceleration": 4048
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 1801,
+              "2500_and_above": 1424,
+              "below_1500": 823
+            },
+            "frames": 593568,
+            "sessions": 8
+          },
+          "train": {
+            "events": 14107,
+            "events_by_collection": {
+              "c1": 6559,
+              "c2": 3774,
+              "c3": 3774
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 3809,
+              "random_acceleration": 8818,
+              "velocity_combinations": 1480
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 5851,
+              "2500_and_above": 5337,
+              "below_1500": 2919
+            },
+            "frames": 2117535,
+            "sessions": 22
+          },
+          "validation": {
+            "events": 4416,
+            "events_by_collection": {
+              "c1": 1620,
+              "c2": 1398,
+              "c3": 1398
+            },
+            "events_by_motion_family": {
+              "random_acceleration": 3240,
+              "velocity_combinations": 1176
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2022,
+              "2500_and_above": 1315,
+              "below_1500": 1079
+            },
+            "frames": 676592,
+            "sessions": 6
+          }
+        },
+        {
+          "excluded": {
+            "events": 0,
+            "events_by_collection": {},
+            "events_by_motion_family": {},
+            "events_by_speed_bin": {},
+            "frames": 0,
+            "sessions": 0
+          },
+          "fold_id": "gcode_fold_5",
+          "test": {
+            "events": 4416,
+            "events_by_collection": {
+              "c1": 1620,
+              "c2": 1398,
+              "c3": 1398
+            },
+            "events_by_motion_family": {
+              "random_acceleration": 3240,
+              "velocity_combinations": 1176
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2022,
+              "2500_and_above": 1315,
+              "below_1500": 1079
+            },
+            "frames": 676592,
+            "sessions": 6
+          },
+          "train": {
+            "events": 12522,
+            "events_by_collection": {
+              "c1": 6166,
+              "c2": 3178,
+              "c3": 3178
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 570,
+              "random_acceleration": 10472,
+              "velocity_combinations": 1480
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 5367,
+              "2500_and_above": 4517,
+              "below_1500": 2638
+            },
+            "frames": 1901598,
+            "sessions": 23
+          },
+          "validation": {
+            "events": 5633,
+            "events_by_collection": {
+              "c1": 2417,
+              "c2": 1608,
+              "c3": 1608
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 3239,
+              "random_acceleration": 2394
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2285,
+              "2500_and_above": 2244,
+              "below_1500": 1104
+            },
+            "frames": 809505,
+            "sessions": 7
+          }
+        }
+      ],
+      "normalization_manifest_sha256": "15bb344f9e76022dfa010966b677c91d9d227028e7631ad0f9e51f1ef52c0bb8",
+      "protocol": "exact_gcode_blocked_5fold",
+      "split_manifest_sha256": "78ce055607633c3d3a8d2989c29704e13bf679ff78b4cdebb95acadad883e5d6",
+      "test_repetitions_per_session": 1
+    },
+    "leave_one_collection_out": {
+      "folds": [
+        {
+          "excluded": {
+            "events": 0,
+            "events_by_collection": {},
+            "events_by_motion_family": {},
+            "events_by_speed_bin": {},
+            "frames": 0,
+            "sessions": 0
+          },
+          "fold_id": "test_c1",
+          "test": {
+            "events": 10203,
+            "events_by_collection": {
+              "c1": 10203
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1809,
+              "random_acceleration": 7654,
+              "velocity_combinations": 740
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 4362,
+              "2500_and_above": 3835,
+              "below_1500": 2006
+            },
+            "frames": 1500411,
+            "sessions": 16
+          },
+          "train": {
+            "events": 10188,
+            "events_by_collection": {
+              "c2": 5184,
+              "c3": 5004
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1810,
+              "random_acceleration": 6832,
+              "velocity_combinations": 1546
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 4432,
+              "2500_and_above": 3450,
+              "below_1500": 2306
+            },
+            "frames": 1546578,
+            "sessions": 16
+          },
+          "validation": {
+            "events": 2180,
+            "events_by_collection": {
+              "c2": 1000,
+              "c3": 1180
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 190,
+              "random_acceleration": 1620,
+              "velocity_combinations": 370
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 880,
+              "2500_and_above": 791,
+              "below_1500": 509
+            },
+            "frames": 340706,
+            "sessions": 4
+          }
+        },
+        {
+          "excluded": {
+            "events": 0,
+            "events_by_collection": {},
+            "events_by_motion_family": {},
+            "events_by_speed_bin": {},
+            "frames": 0,
+            "sessions": 0
+          },
+          "fold_id": "test_c2",
+          "test": {
+            "events": 6184,
+            "events_by_collection": {
+              "c2": 6184
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1000,
+              "random_acceleration": 4226,
+              "velocity_combinations": 958
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2660,
+              "2500_and_above": 2117,
+              "below_1500": 1407
+            },
+            "frames": 947703,
+            "sessions": 10
+          },
+          "train": {
+            "events": 12601,
+            "events_by_collection": {
+              "c1": 8023,
+              "c3": 4578
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1999,
+              "random_acceleration": 9274,
+              "velocity_combinations": 1328
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 5382,
+              "2500_and_above": 4512,
+              "below_1500": 2707
+            },
+            "frames": 1895250,
+            "sessions": 20
+          },
+          "validation": {
+            "events": 3786,
+            "events_by_collection": {
+              "c1": 2180,
+              "c3": 1606
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 810,
+              "random_acceleration": 2606,
+              "velocity_combinations": 370
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 1632,
+              "2500_and_above": 1447,
+              "below_1500": 707
+            },
+            "frames": 544742,
+            "sessions": 6
+          }
+        },
+        {
+          "excluded": {
+            "events": 0,
+            "events_by_collection": {},
+            "events_by_motion_family": {},
+            "events_by_speed_bin": {},
+            "frames": 0,
+            "sessions": 0
+          },
+          "fold_id": "test_c3",
+          "test": {
+            "events": 6184,
+            "events_by_collection": {
+              "c3": 6184
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1000,
+              "random_acceleration": 4226,
+              "velocity_combinations": 958
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2652,
+              "2500_and_above": 2124,
+              "below_1500": 1408
+            },
+            "frames": 939581,
+            "sessions": 10
+          },
+          "train": {
+            "events": 12601,
+            "events_by_collection": {
+              "c1": 8023,
+              "c2": 4578
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1999,
+              "random_acceleration": 9274,
+              "velocity_combinations": 1328
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 5387,
+              "2500_and_above": 4506,
+              "below_1500": 2708
+            },
+            "frames": 1900663,
+            "sessions": 20
+          },
+          "validation": {
+            "events": 3786,
+            "events_by_collection": {
+              "c1": 2180,
+              "c2": 1606
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 810,
+              "random_acceleration": 2606,
+              "velocity_combinations": 370
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 1635,
+              "2500_and_above": 1446,
+              "below_1500": 705
+            },
+            "frames": 547451,
+            "sessions": 6
+          }
+        }
+      ],
+      "normalization_manifest_sha256": "2e532db6b9eebee6fb6f00c6084156eadcc9dd42eae5ea5388e3e2b283d33437",
+      "protocol": "leave_one_collection_out",
+      "split_manifest_sha256": "1502d355a695c5f772046b6a15d4975e6742f3c62cac4e35c95658f4b6b9b9e7",
+      "test_repetitions_per_session": 1
+    },
+    "main_session_grouped": {
+      "folds": [
+        {
+          "excluded": {
+            "events": 0,
+            "events_by_collection": {},
+            "events_by_motion_family": {},
+            "events_by_speed_bin": {},
+            "frames": 0,
+            "sessions": 0
+          },
+          "fold_id": "fold_1",
+          "test": {
+            "events": 4192,
+            "events_by_collection": {
+              "c1": 1586,
+              "c2": 1606,
+              "c3": 1000
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 380,
+              "random_acceleration": 3442,
+              "velocity_combinations": 370
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 1698,
+              "2500_and_above": 1483,
+              "below_1500": 1011
+            },
+            "frames": 666715,
+            "sessions": 8
+          },
+          "train": {
+            "events": 14131,
+            "events_by_collection": {
+              "c1": 6781,
+              "c2": 3552,
+              "c3": 3798
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 2619,
+              "random_acceleration": 9814,
+              "velocity_combinations": 1698
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 6120,
+              "2500_and_above": 5127,
+              "below_1500": 2884
+            },
+            "frames": 2086910,
+            "sessions": 21
+          },
+          "validation": {
+            "events": 4248,
+            "events_by_collection": {
+              "c1": 1836,
+              "c2": 1026,
+              "c3": 1386
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 810,
+              "random_acceleration": 2850,
+              "velocity_combinations": 588
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 1856,
+              "2500_and_above": 1466,
+              "below_1500": 926
+            },
+            "frames": 634070,
+            "sessions": 7
+          }
+        },
+        {
+          "excluded": {
+            "events": 0,
+            "events_by_collection": {},
+            "events_by_motion_family": {},
+            "events_by_speed_bin": {},
+            "frames": 0,
+            "sessions": 0
+          },
+          "fold_id": "fold_2",
+          "test": {
+            "events": 4248,
+            "events_by_collection": {
+              "c1": 1836,
+              "c2": 1026,
+              "c3": 1386
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 810,
+              "random_acceleration": 2850,
+              "velocity_combinations": 588
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 1856,
+              "2500_and_above": 1466,
+              "below_1500": 926
+            },
+            "frames": 634070,
+            "sessions": 7
+          },
+          "train": {
+            "events": 13509,
+            "events_by_collection": {
+              "c1": 5965,
+              "c2": 3772,
+              "c3": 3772
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 2189,
+              "random_acceleration": 9840,
+              "velocity_combinations": 1480
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 5702,
+              "2500_and_above": 4982,
+              "below_1500": 2825
+            },
+            "frames": 2036235,
+            "sessions": 22
+          },
+          "validation": {
+            "events": 4814,
+            "events_by_collection": {
+              "c1": 2402,
+              "c2": 1386,
+              "c3": 1026
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 810,
+              "random_acceleration": 3416,
+              "velocity_combinations": 588
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2116,
+              "2500_and_above": 1628,
+              "below_1500": 1070
+            },
+            "frames": 717390,
+            "sessions": 7
+          }
+        },
+        {
+          "excluded": {
+            "events": 0,
+            "events_by_collection": {},
+            "events_by_motion_family": {},
+            "events_by_speed_bin": {},
+            "frames": 0,
+            "sessions": 0
+          },
+          "fold_id": "fold_3",
+          "test": {
+            "events": 4814,
+            "events_by_collection": {
+              "c1": 2402,
+              "c2": 1386,
+              "c3": 1026
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 810,
+              "random_acceleration": 3416,
+              "velocity_combinations": 588
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2116,
+              "2500_and_above": 1628,
+              "below_1500": 1070
+            },
+            "frames": 717390,
+            "sessions": 7
+          },
+          "train": {
+            "events": 13021,
+            "events_by_collection": {
+              "c1": 5411,
+              "c2": 3632,
+              "c3": 3978
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 2189,
+              "random_acceleration": 9504,
+              "velocity_combinations": 1328
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 5476,
+              "2500_and_above": 4624,
+              "below_1500": 2921
+            },
+            "frames": 1989415,
+            "sessions": 22
+          },
+          "validation": {
+            "events": 4736,
+            "events_by_collection": {
+              "c1": 2390,
+              "c2": 1166,
+              "c3": 1180
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 810,
+              "random_acceleration": 3186,
+              "velocity_combinations": 740
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2082,
+              "2500_and_above": 1824,
+              "below_1500": 830
+            },
+            "frames": 680890,
+            "sessions": 7
+          }
+        },
+        {
+          "excluded": {
+            "events": 0,
+            "events_by_collection": {},
+            "events_by_motion_family": {},
+            "events_by_speed_bin": {},
+            "frames": 0,
+            "sessions": 0
+          },
+          "fold_id": "fold_4",
+          "test": {
+            "events": 4736,
+            "events_by_collection": {
+              "c1": 2390,
+              "c2": 1166,
+              "c3": 1180
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 810,
+              "random_acceleration": 3186,
+              "velocity_combinations": 740
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2082,
+              "2500_and_above": 1824,
+              "below_1500": 830
+            },
+            "frames": 680890,
+            "sessions": 7
+          },
+          "train": {
+            "events": 13254,
+            "events_by_collection": {
+              "c1": 5824,
+              "c2": 4018,
+              "c3": 3412
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 2000,
+              "random_acceleration": 9708,
+              "velocity_combinations": 1546
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 5670,
+              "2500_and_above": 4577,
+              "below_1500": 3007
+            },
+            "frames": 2018175,
+            "sessions": 22
+          },
+          "validation": {
+            "events": 4581,
+            "events_by_collection": {
+              "c1": 1989,
+              "c2": 1000,
+              "c3": 1592
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 999,
+              "random_acceleration": 3212,
+              "velocity_combinations": 370
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 1922,
+              "2500_and_above": 1675,
+              "below_1500": 984
+            },
+            "frames": 688630,
+            "sessions": 7
+          }
+        },
+        {
+          "excluded": {
+            "events": 0,
+            "events_by_collection": {},
+            "events_by_motion_family": {},
+            "events_by_speed_bin": {},
+            "frames": 0,
+            "sessions": 0
+          },
+          "fold_id": "fold_5",
+          "test": {
+            "events": 4581,
+            "events_by_collection": {
+              "c1": 1989,
+              "c2": 1000,
+              "c3": 1592
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 999,
+              "random_acceleration": 3212,
+              "velocity_combinations": 370
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 1922,
+              "2500_and_above": 1675,
+              "below_1500": 984
+            },
+            "frames": 688630,
+            "sessions": 7
+          },
+          "train": {
+            "events": 13798,
+            "events_by_collection": {
+              "c1": 6628,
+              "c2": 3578,
+              "c3": 3592
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 2430,
+              "random_acceleration": 9452,
+              "velocity_combinations": 1916
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 6054,
+              "2500_and_above": 4918,
+              "below_1500": 2826
+            },
+            "frames": 2032350,
+            "sessions": 21
+          },
+          "validation": {
+            "events": 4192,
+            "events_by_collection": {
+              "c1": 1586,
+              "c2": 1606,
+              "c3": 1000
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 380,
+              "random_acceleration": 3442,
+              "velocity_combinations": 370
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 1698,
+              "2500_and_above": 1483,
+              "below_1500": 1011
+            },
+            "frames": 666715,
+            "sessions": 8
+          }
+        }
+      ],
+      "normalization_manifest_sha256": "7ce85940550c14f9de92b7484c912496703d9ef21d01ba4f423f90e654f68277",
+      "protocol": "main_session_grouped_5fold",
+      "split_manifest_sha256": "f4ce4d7ffb03c9faa6405360937dde9e8dac93a9ac6df0e844a3da119a162123",
+      "test_repetitions_per_session": 1
+    },
+    "pairwise_collection_transfer": {
+      "folds": [
+        {
+          "excluded": {
+            "events": 6184,
+            "events_by_collection": {
+              "c3": 6184
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1000,
+              "random_acceleration": 4226,
+              "velocity_combinations": 958
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2652,
+              "2500_and_above": 2124,
+              "below_1500": 1408
+            },
+            "frames": 939581,
+            "sessions": 10
+          },
+          "fold_id": "c1_to_c2",
+          "test": {
+            "events": 6184,
+            "events_by_collection": {
+              "c2": 6184
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1000,
+              "random_acceleration": 4226,
+              "velocity_combinations": 958
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2660,
+              "2500_and_above": 2117,
+              "below_1500": 1407
+            },
+            "frames": 947703,
+            "sessions": 10
+          },
+          "train": {
+            "events": 8023,
+            "events_by_collection": {
+              "c1": 8023
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1619,
+              "random_acceleration": 6034,
+              "velocity_combinations": 370
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 3463,
+              "2500_and_above": 3026,
+              "below_1500": 1534
+            },
+            "frames": 1159443,
+            "sessions": 12
+          },
+          "validation": {
+            "events": 2180,
+            "events_by_collection": {
+              "c1": 2180
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 190,
+              "random_acceleration": 1620,
+              "velocity_combinations": 370
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 899,
+              "2500_and_above": 809,
+              "below_1500": 472
+            },
+            "frames": 340968,
+            "sessions": 4
+          }
+        },
+        {
+          "excluded": {
+            "events": 6184,
+            "events_by_collection": {
+              "c2": 6184
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1000,
+              "random_acceleration": 4226,
+              "velocity_combinations": 958
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2660,
+              "2500_and_above": 2117,
+              "below_1500": 1407
+            },
+            "frames": 947703,
+            "sessions": 10
+          },
+          "fold_id": "c1_to_c3",
+          "test": {
+            "events": 6184,
+            "events_by_collection": {
+              "c3": 6184
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1000,
+              "random_acceleration": 4226,
+              "velocity_combinations": 958
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2652,
+              "2500_and_above": 2124,
+              "below_1500": 1408
+            },
+            "frames": 939581,
+            "sessions": 10
+          },
+          "train": {
+            "events": 8023,
+            "events_by_collection": {
+              "c1": 8023
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1619,
+              "random_acceleration": 6034,
+              "velocity_combinations": 370
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 3463,
+              "2500_and_above": 3026,
+              "below_1500": 1534
+            },
+            "frames": 1159443,
+            "sessions": 12
+          },
+          "validation": {
+            "events": 2180,
+            "events_by_collection": {
+              "c1": 2180
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 190,
+              "random_acceleration": 1620,
+              "velocity_combinations": 370
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 899,
+              "2500_and_above": 809,
+              "below_1500": 472
+            },
+            "frames": 340968,
+            "sessions": 4
+          }
+        },
+        {
+          "excluded": {
+            "events": 6184,
+            "events_by_collection": {
+              "c3": 6184
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1000,
+              "random_acceleration": 4226,
+              "velocity_combinations": 958
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2652,
+              "2500_and_above": 2124,
+              "below_1500": 1408
+            },
+            "frames": 939581,
+            "sessions": 10
+          },
+          "fold_id": "c2_to_c1",
+          "test": {
+            "events": 10203,
+            "events_by_collection": {
+              "c1": 10203
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1809,
+              "random_acceleration": 7654,
+              "velocity_combinations": 740
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 4362,
+              "2500_and_above": 3835,
+              "below_1500": 2006
+            },
+            "frames": 1500411,
+            "sessions": 16
+          },
+          "train": {
+            "events": 5184,
+            "events_by_collection": {
+              "c2": 5184
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 810,
+              "random_acceleration": 3416,
+              "velocity_combinations": 958
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2312,
+              "2500_and_above": 1799,
+              "below_1500": 1073
+            },
+            "frames": 769809,
+            "sessions": 8
+          },
+          "validation": {
+            "events": 1000,
+            "events_by_collection": {
+              "c2": 1000
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 190,
+              "random_acceleration": 810
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 348,
+              "2500_and_above": 318,
+              "below_1500": 334
+            },
+            "frames": 177894,
+            "sessions": 2
+          }
+        },
+        {
+          "excluded": {
+            "events": 10203,
+            "events_by_collection": {
+              "c1": 10203
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1809,
+              "random_acceleration": 7654,
+              "velocity_combinations": 740
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 4362,
+              "2500_and_above": 3835,
+              "below_1500": 2006
+            },
+            "frames": 1500411,
+            "sessions": 16
+          },
+          "fold_id": "c2_to_c3",
+          "test": {
+            "events": 6184,
+            "events_by_collection": {
+              "c3": 6184
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1000,
+              "random_acceleration": 4226,
+              "velocity_combinations": 958
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2652,
+              "2500_and_above": 2124,
+              "below_1500": 1408
+            },
+            "frames": 939581,
+            "sessions": 10
+          },
+          "train": {
+            "events": 5184,
+            "events_by_collection": {
+              "c2": 5184
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 810,
+              "random_acceleration": 3416,
+              "velocity_combinations": 958
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2312,
+              "2500_and_above": 1799,
+              "below_1500": 1073
+            },
+            "frames": 769809,
+            "sessions": 8
+          },
+          "validation": {
+            "events": 1000,
+            "events_by_collection": {
+              "c2": 1000
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 190,
+              "random_acceleration": 810
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 348,
+              "2500_and_above": 318,
+              "below_1500": 334
+            },
+            "frames": 177894,
+            "sessions": 2
+          }
+        },
+        {
+          "excluded": {
+            "events": 6184,
+            "events_by_collection": {
+              "c2": 6184
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1000,
+              "random_acceleration": 4226,
+              "velocity_combinations": 958
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2660,
+              "2500_and_above": 2117,
+              "below_1500": 1407
+            },
+            "frames": 947703,
+            "sessions": 10
+          },
+          "fold_id": "c3_to_c1",
+          "test": {
+            "events": 10203,
+            "events_by_collection": {
+              "c1": 10203
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1809,
+              "random_acceleration": 7654,
+              "velocity_combinations": 740
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 4362,
+              "2500_and_above": 3835,
+              "below_1500": 2006
+            },
+            "frames": 1500411,
+            "sessions": 16
+          },
+          "train": {
+            "events": 5184,
+            "events_by_collection": {
+              "c3": 5184
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 810,
+              "random_acceleration": 3416,
+              "velocity_combinations": 958
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2303,
+              "2500_and_above": 1803,
+              "below_1500": 1078
+            },
+            "frames": 765122,
+            "sessions": 8
+          },
+          "validation": {
+            "events": 1000,
+            "events_by_collection": {
+              "c3": 1000
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 190,
+              "random_acceleration": 810
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 349,
+              "2500_and_above": 321,
+              "below_1500": 330
+            },
+            "frames": 174459,
+            "sessions": 2
+          }
+        },
+        {
+          "excluded": {
+            "events": 10203,
+            "events_by_collection": {
+              "c1": 10203
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1809,
+              "random_acceleration": 7654,
+              "velocity_combinations": 740
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 4362,
+              "2500_and_above": 3835,
+              "below_1500": 2006
+            },
+            "frames": 1500411,
+            "sessions": 16
+          },
+          "fold_id": "c3_to_c2",
+          "test": {
+            "events": 6184,
+            "events_by_collection": {
+              "c2": 6184
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 1000,
+              "random_acceleration": 4226,
+              "velocity_combinations": 958
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2660,
+              "2500_and_above": 2117,
+              "below_1500": 1407
+            },
+            "frames": 947703,
+            "sessions": 10
+          },
+          "train": {
+            "events": 5184,
+            "events_by_collection": {
+              "c3": 5184
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 810,
+              "random_acceleration": 3416,
+              "velocity_combinations": 958
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 2303,
+              "2500_and_above": 1803,
+              "below_1500": 1078
+            },
+            "frames": 765122,
+            "sessions": 8
+          },
+          "validation": {
+            "events": 1000,
+            "events_by_collection": {
+              "c3": 1000
+            },
+            "events_by_motion_family": {
+              "constant_velocity": 190,
+              "random_acceleration": 810
+            },
+            "events_by_speed_bin": {
+              "1500_to_below_2500": 349,
+              "2500_and_above": 321,
+              "below_1500": 330
+            },
+            "frames": 174459,
+            "sessions": 2
+          }
+        }
+      ],
+      "normalization_manifest_sha256": "eb36e725cb068253692d6521daec76ac49d029bd32a5fbf92d38136e0084d3f2",
+      "protocol": "pairwise_collection_transfer",
+      "split_manifest_sha256": "1eabfe54b6cf1eeb6794a345fe6ceceb6be085f622f9e9311b3779c16f97ada1",
+      "test_repetitions_per_session": 2
+    }
+  },
+  "raw": {
+    "bytes": 12305446413,
+    "files": 1142,
+    "samples": 11292368135,
+    "sha256_verified": true
+  },
+  "raw_manifest_sha256": "328e71b96313139ac08514eb6b84caa79916c1c868295abc34c242fe1a0c0db2",
+  "schema_version": 1,
+  "source_code_sha256": "5ed14d29b8d9ff606ed1a5d24c47a0435d67c05b98254fbd3f44171ccffb7b1d",
+  "status": "passed"
+}

@@ -1,0 +1,107 @@
+{
+  "dataset_manifest_sha256": "05bf8cdfac9a361231eed7f225c8a9cf53959be42102291975ea32119bbc256f",
+  "folds": [
+    {
+      "fold_id": "test_c1",
+      "signal": {
+        "count": 1546578,
+        "formula": "(signal - mean) / standard_deviation",
+        "maximum": 0.20090974867343903,
+        "mean": -1.0628606181583377e-07,
+        "minimum": -0.18476827442646027,
+        "standard_deviation": 0.016241323540072548,
+        "variance": 0.00026378059033331465
+      },
+      "train_session_ids": [
+        "bee_constant_velocity_sweep_part001_3500_1070__20260617_135201",
+        "bee_constant_velocity_sweep_part001_3500_1070__20260618_104916",
+        "bee_constant_velocity_sweep_part002_1067_500__20260618_115303",
+        "bee_random_accel_part001__20260617_152949",
+        "bee_random_accel_part001__20260618_122533",
+        "bee_random_accel_part002__20260617_163457",
+        "bee_random_accel_part002__20260618_133042",
+        "bee_random_accel_part003__20260617_174019",
+        "bee_random_accel_part003__20260618_143537",
+        "bee_random_accel_part005__20260618_074151",
+        "bee_random_accel_part005__20260618_164542",
+        "bee_random_accel_part006__20260618_084856",
+        "bee_random_accel_part006__20260618_175052",
+        "bee_velocity_combos_part001__20260618_090641",
+        "bee_velocity_combos_part001__20260618_180834",
+        "bee_velocity_combos_part002__20260618_100526"
+      ]
+    },
+    {
+      "fold_id": "test_c2",
+      "signal": {
+        "count": 1895250,
+        "formula": "(signal - mean) / standard_deviation",
+        "maximum": 0.1120937317609787,
+        "mean": 7.582172709884494e-08,
+        "minimum": -0.05876701697707176,
+        "standard_deviation": 0.0052912578465891015,
+        "variance": 2.799740959909074e-05
+      },
+      "train_session_ids": [
+        "bee_constant_velocity_sweep_part001_3500_1070__20260612_173933",
+        "bee_constant_velocity_sweep_part001_3500_1070__20260615_092944",
+        "bee_constant_velocity_sweep_part002_1067_500__20260615_103327",
+        "bee_constant_velocity_sweep_part002_1067_500__20260618_115303",
+        "bee_random_accel_part001__20260615_145027",
+        "bee_random_accel_part002__20260612_175642",
+        "bee_random_accel_part002__20260615_130034",
+        "bee_random_accel_part002__20260618_133042",
+        "bee_random_accel_part003__20260618_143537",
+        "bee_random_accel_part004__20260613_101932",
+        "bee_random_accel_part004__20260615_170100",
+        "bee_random_accel_part004__20260618_154034",
+        "bee_random_accel_part005__20260613_112444",
+        "bee_random_accel_part005__20260615_180612",
+        "bee_random_accel_part005__20260618_164542",
+        "bee_random_accel_part006__20260615_191127",
+        "bee_random_accel_part006__20260618_175052",
+        "bee_velocity_combos_part001__20260618_180834",
+        "bee_velocity_combos_part002__20260613_134623",
+        "bee_velocity_combos_part002__20260618_190720"
+      ]
+    },
+    {
+      "fold_id": "test_c3",
+      "signal": {
+        "count": 1900663,
+        "formula": "(signal - mean) / standard_deviation",
+        "maximum": 0.13920775055885315,
+        "mean": -1.1681237031467928e-07,
+        "minimum": -0.20001761615276337,
+        "standard_deviation": 0.008917610742519249,
+        "variance": 7.952378135509471e-05
+      },
+      "train_session_ids": [
+        "bee_constant_velocity_sweep_part001_3500_1070__20260612_173933",
+        "bee_constant_velocity_sweep_part001_3500_1070__20260615_092944",
+        "bee_constant_velocity_sweep_part002_1067_500__20260615_103327",
+        "bee_constant_velocity_sweep_part002_1067_500__20260617_145718",
+        "bee_random_accel_part001__20260615_145027",
+        "bee_random_accel_part002__20260612_175642",
+        "bee_random_accel_part002__20260615_130034",
+        "bee_random_accel_part002__20260617_163457",
+        "bee_random_accel_part003__20260617_174019",
+        "bee_random_accel_part004__20260613_101932",
+        "bee_random_accel_part004__20260615_170100",
+        "bee_random_accel_part004__20260617_184540",
+        "bee_random_accel_part005__20260613_112444",
+        "bee_random_accel_part005__20260615_180612",
+        "bee_random_accel_part005__20260618_074151",
+        "bee_random_accel_part006__20260615_191127",
+        "bee_random_accel_part006__20260618_084856",
+        "bee_velocity_combos_part001__20260618_090641",
+        "bee_velocity_combos_part002__20260613_134623",
+        "bee_velocity_combos_part002__20260618_100526"
+      ]
+    }
+  ],
+  "protocol": "leave_one_collection_out",
+  "schema_version": 1,
+  "scope": "training_sessions_only_frame_weighted_population_statistics",
+  "split_manifest_sha256": "1502d355a695c5f772046b6a15d4975e6742f3c62cac4e35c95658f4b6b9b9e7"
+}

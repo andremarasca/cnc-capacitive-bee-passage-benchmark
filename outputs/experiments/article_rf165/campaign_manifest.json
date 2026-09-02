@@ -1,0 +1,105 @@
+{
+  "execution": {
+    "core_frames": 900,
+    "maximum_parallel_gpu_tasks": 4,
+    "task_count": 48,
+    "task_ids": [
+      "training_population__main_session_grouped__seed_42__fold_1",
+      "training_population__main_session_grouped__seed_42__fold_2",
+      "training_population__main_session_grouped__seed_42__fold_3",
+      "training_population__main_session_grouped__seed_42__fold_4",
+      "training_population__main_session_grouped__seed_42__fold_5",
+      "training_population__leave_one_collection_out__seed_42__test_c1",
+      "training_population__leave_one_collection_out__seed_42__test_c2",
+      "training_population__leave_one_collection_out__seed_42__test_c3",
+      "causal_adaptive_tau60__main_session_grouped__seed_42__fold_1",
+      "causal_adaptive_tau60__main_session_grouped__seed_42__fold_2",
+      "causal_adaptive_tau60__main_session_grouped__seed_42__fold_3",
+      "causal_adaptive_tau60__main_session_grouped__seed_42__fold_4",
+      "causal_adaptive_tau60__main_session_grouped__seed_42__fold_5",
+      "causal_adaptive_tau60__leave_one_collection_out__seed_42__test_c1",
+      "causal_adaptive_tau60__leave_one_collection_out__seed_42__test_c2",
+      "causal_adaptive_tau60__leave_one_collection_out__seed_42__test_c3",
+      "training_population__main_session_grouped__seed_43__fold_1",
+      "training_population__main_session_grouped__seed_43__fold_2",
+      "training_population__main_session_grouped__seed_43__fold_3",
+      "training_population__main_session_grouped__seed_43__fold_4",
+      "training_population__main_session_grouped__seed_43__fold_5",
+      "training_population__leave_one_collection_out__seed_43__test_c1",
+      "training_population__leave_one_collection_out__seed_43__test_c2",
+      "training_population__leave_one_collection_out__seed_43__test_c3",
+      "causal_adaptive_tau60__main_session_grouped__seed_43__fold_1",
+      "causal_adaptive_tau60__main_session_grouped__seed_43__fold_2",
+      "causal_adaptive_tau60__main_session_grouped__seed_43__fold_3",
+      "causal_adaptive_tau60__main_session_grouped__seed_43__fold_4",
+      "causal_adaptive_tau60__main_session_grouped__seed_43__fold_5",
+      "causal_adaptive_tau60__leave_one_collection_out__seed_43__test_c1",
+      "causal_adaptive_tau60__leave_one_collection_out__seed_43__test_c2",
+      "causal_adaptive_tau60__leave_one_collection_out__seed_43__test_c3",
+      "training_population__main_session_grouped__seed_44__fold_1",
+      "training_population__main_session_grouped__seed_44__fold_2",
+      "training_population__main_session_grouped__seed_44__fold_3",
+      "training_population__main_session_grouped__seed_44__fold_4",
+      "training_population__main_session_grouped__seed_44__fold_5",
+      "training_population__leave_one_collection_out__seed_44__test_c1",
+      "training_population__leave_one_collection_out__seed_44__test_c2",
+      "training_population__leave_one_collection_out__seed_44__test_c3",
+      "causal_adaptive_tau60__main_session_grouped__seed_44__fold_1",
+      "causal_adaptive_tau60__main_session_grouped__seed_44__fold_2",
+      "causal_adaptive_tau60__main_session_grouped__seed_44__fold_3",
+      "causal_adaptive_tau60__main_session_grouped__seed_44__fold_4",
+      "causal_adaptive_tau60__main_session_grouped__seed_44__fold_5",
+      "causal_adaptive_tau60__leave_one_collection_out__seed_44__test_c1",
+      "causal_adaptive_tau60__leave_one_collection_out__seed_44__test_c2",
+      "causal_adaptive_tau60__leave_one_collection_out__seed_44__test_c3"
+    ]
+  },
+  "experiment_id": "article_rf165",
+  "git": {
+    "commit": "7e66ee07dc5d4c59a7e7cce566909d0c38ef376f",
+    "dirty": false
+  },
+  "inputs": {
+    "dataset_manifest": {
+      "path": "outputs/processed/dataset/manifest.json",
+      "sha256": "05bf8cdfac9a361231eed7f225c8a9cf53959be42102291975ea32119bbc256f"
+    },
+    "normalization_manifests": {
+      "leave_one_collection_out": {
+        "path": "outputs/normalization/leave_one_collection_out.json",
+        "sha256": "2e532db6b9eebee6fb6f00c6084156eadcc9dd42eae5ea5388e3e2b283d33437"
+      },
+      "main_session_grouped": {
+        "path": "outputs/normalization/main_session_grouped.json",
+        "sha256": "7ce85940550c14f9de92b7484c912496703d9ef21d01ba4f423f90e654f68277"
+      }
+    },
+    "normalization_runtime_configs": {
+      "causal_adaptive_tau60": {
+        "path": "configs/normalization_causal_tau60.yaml",
+        "sha256": "55f4ea0fad10de643fdda00b71abbba61c26cc99470054f53f7ec933b4fe6e9c"
+      },
+      "training_population": null
+    },
+    "splits": {
+      "leave_one_collection_out": {
+        "path": "outputs/splits/leave_one_collection_out.json",
+        "sha256": "1502d355a695c5f772046b6a15d4975e6742f3c62cac4e35c95658f4b6b9b9e7"
+      },
+      "main_session_grouped": {
+        "path": "outputs/splits/main_session_grouped.json",
+        "sha256": "f4ce4d7ffb03c9faa6405360937dde9e8dac93a9ac6df0e844a3da119a162123"
+      }
+    }
+  },
+  "model": {
+    "path": "configs/model_rf165.yaml",
+    "sha256": "ec0f4d3bbd73d44e90e800affd831f6981968440813f4c0b249fc881eb5feb03"
+  },
+  "plan": {
+    "path": "configs/article_rf165.yaml",
+    "sha256": "3eae6c88cb74eff389f81c916cbcf447355ac39da0846e5c92f70e1417386a94"
+  },
+  "schema_version": 1,
+  "source_code_sha256": "9a7c7e8efa5ca4475622fc9386cd7522e582de419b436e3e478b3be6c7a5558e"
+}

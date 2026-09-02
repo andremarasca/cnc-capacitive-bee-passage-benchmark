@@ -1,0 +1,16 @@
+schema_version: 1
+experiment_id: "article_rf165"
+model_config: "configs/model_rf165.yaml"
+output_root: "outputs/experiments/article_rf165"
+protocols:
+  - "main_session_grouped"
+  - "leave_one_collection_out"
+seeds: [42, 43, 44]
+core_frames: 900
+expected_task_count: 48
+maximum_parallel_gpu_tasks: 4
+normalizations:
+  - variant: "training_population"
+    config: null
+  - variant: "causal_adaptive_tau60"
+    config: "configs/normalization_causal_tau60.yaml"

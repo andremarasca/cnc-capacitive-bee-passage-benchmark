@@ -1,0 +1,76 @@
+﻿{
+    "schema_version":  1,
+    "file_count":  10,
+    "files":  [
+                  {
+                      "gcode_id":  "bee_constant_velocity_sweep_part001_3500_1070",
+                      "motion_family":  "constant_velocity",
+                      "relative_path":  "data/gcode/bee_constant_velocity_sweep_part001_3500_1070.gcode",
+                      "size_bytes":  567306,
+                      "sha256":  "2d17c1cbe186199eccfbfb50c32be38d642154522d012578c5aebe8f90ab2202"
+                  },
+                  {
+                      "gcode_id":  "bee_constant_velocity_sweep_part002_1067_500",
+                      "motion_family":  "constant_velocity",
+                      "relative_path":  "data/gcode/bee_constant_velocity_sweep_part002_1067_500.gcode",
+                      "size_bytes":  301343,
+                      "sha256":  "1d98cc53cb1121a2762cef96548f19e967a4e7f5341d63289f275e9bc3e7accb"
+                  },
+                  {
+                      "gcode_id":  "bee_random_accel_part001",
+                      "motion_family":  "random_acceleration",
+                      "relative_path":  "data/gcode/bee_random_accel_part001.gcode",
+                      "size_bytes":  560300,
+                      "sha256":  "0b0e7784e8a43233e2eda90351925321fd76cea405b3bfc63d3fcc403e8a88ac"
+                  },
+                  {
+                      "gcode_id":  "bee_random_accel_part002",
+                      "motion_family":  "random_acceleration",
+                      "relative_path":  "data/gcode/bee_random_accel_part002.gcode",
+                      "size_bytes":  561437,
+                      "sha256":  "e33c9c5d8918a3f1f7a3d162f0daa01845fd509b36011fa26213d83c600c0ea7"
+                  },
+                  {
+                      "gcode_id":  "bee_random_accel_part003",
+                      "motion_family":  "random_acceleration",
+                      "relative_path":  "data/gcode/bee_random_accel_part003.gcode",
+                      "size_bytes":  562416,
+                      "sha256":  "a02158eec3516e28a38120ecbda79e31906b36123eca2602190d3a7a6c869b85"
+                  },
+                  {
+                      "gcode_id":  "bee_random_accel_part004",
+                      "motion_family":  "random_acceleration",
+                      "relative_path":  "data/gcode/bee_random_accel_part004.gcode",
+                      "size_bytes":  564267,
+                      "sha256":  "886f1ed1a56ebbae97a9a363b935c3676b3c53d5541cc12460196951166e3b94"
+                  },
+                  {
+                      "gcode_id":  "bee_random_accel_part005",
+                      "motion_family":  "random_acceleration",
+                      "relative_path":  "data/gcode/bee_random_accel_part005.gcode",
+                      "size_bytes":  564098,
+                      "sha256":  "516897b53df728d46d1bae09f7d689e86b4b91d2c77e55cf0e7de01dbeb55218"
+                  },
+                  {
+                      "gcode_id":  "bee_random_accel_part006",
+                      "motion_family":  "random_acceleration",
+                      "relative_path":  "data/gcode/bee_random_accel_part006.gcode",
+                      "size_bytes":  152287,
+                      "sha256":  "fd3132678195c743aecd2c920951413fd25cd38a4c59737d2e2ff6b5bc9896ee"
+                  },
+                  {
+                      "gcode_id":  "bee_velocity_combos_part001",
+                      "motion_family":  "velocity_combinations",
+                      "relative_path":  "data/gcode/bee_velocity_combos_part001.gcode",
+                      "size_bytes":  541599,
+                      "sha256":  "2758165c90e4f01277f21fac4abec4b1b8685c950dfd578fb67be1113fe8f1a9"
+                  },
+                  {
+                      "gcode_id":  "bee_velocity_combos_part002",
+                      "motion_family":  "velocity_combinations",
+                      "relative_path":  "data/gcode/bee_velocity_combos_part002.gcode",
+                      "size_bytes":  237967,
+                      "sha256":  "2aabbe201b53d9e911e12c7e73119abf01772fdd1c43159b4431d7c960e1bc80"
+                  }
+              ]
+}

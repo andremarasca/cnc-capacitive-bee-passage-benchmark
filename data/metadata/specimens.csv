@@ -1,0 +1,4 @@
+collection_id,species,specimens_per_passage,unique_specimens,preservation,experimental_condition,body_orientation,single_specimen_holder_internal_diameter_mm,sensor_tunnel_internal_diameter_mm,body_dimensions_measured,notes
+c1,Melipona quadrifasciata,1,,frozen after collection,thawed at ambient temperature before use,head toward the left,6.0,11.5,false,specimen changes occurred but their times and total count were not recorded
+c2,Melipona quadrifasciata,1,1,frozen after collection,thawed at ambient temperature before use,head toward the left,6.0,11.5,false,same specimen used in every session
+c3,Melipona quadrifasciata,2,2,frozen after collection,thawed at ambient temperature before use,heads toward the left,,11.5,false,specimens were aligned and touching and the holder diameter was not measured

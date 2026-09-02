@@ -1,0 +1,11 @@
+subsystem,component,configuration
+sensor,capacitive tunnel,CPVC tube with approximately 11.5 mm internal diameter
+sensor,capacitive tunnel exterior,approximately 15 mm external diameter
+sensor,copper ring electrodes,2 mm wire centered at 49 56 and 63 mm
+excitation,ESP32 DAC,approximately 33 kHz sine excitation across the 0 to 3.3 V output range
+reference,ESP32 digital output,quadrature square-wave synchronous-demodulation reference
+amplifier,AD620,manual maximum gain below visible saturation
+demodulator,AD630,synchronous demodulation
+analog filter,passive RC low-pass,10 kohm 1 percent resistor and 100 nF 104J100 polypropylene film capacitor with theoretical cutoff 159.155 Hz
+DAQ,NI 9215,16-bit differential acquisition at 100 kHz over plus or minus 10 V
+CNC,GRBL-controlled linear axis,Tr8 lead screw with 8 mm lead anti-backlash nut and 100 steps per mm
